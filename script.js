@@ -3,5 +3,9 @@ console.log("page loaded...");
 // edit profile button
 function changeName() {
     var name = document.querySelector("#fullName");
-    name.innerText = "Naruto Uzumaki";
+    if (name.innerText == "Fifth Hokage") {
+        name.innerText = "Naruto Uzumaki";
+    } else {
+        name.innerText = "Fifth Hokage";
+    }
 }
