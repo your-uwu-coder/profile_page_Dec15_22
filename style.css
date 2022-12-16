@@ -102,7 +102,7 @@ body {
 }
 
 .user-card .card-header {
-    background-color: #17a2b8;
+    background-color: rgb(235,131,76);
     height: 85px;
     margin-bottom: 70px;
     display: block;
