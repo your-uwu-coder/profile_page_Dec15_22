@@ -63,28 +63,29 @@
             <!-- connection requests card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">2</span>
+                    <span class="badge" id="request">2</span>
                     <h3>Connection Requests</h3>
                 </div>
                 <ul class="card-list">
-                    <li class="card-list-item">
+                    <li class="card-list-item" id="orochimaru">
                         <span>
                             <img src="images/orochimaru.jpg" alt="orochimaru" class="avatar-s">
                             Orochimaru
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept(orochimaru)">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="decline(orochimaru)">
                         </span>
                     </li>
-                    <li class="card-list-item">
+                    
+                    <li class="card-list-item" id="konohamaru">
                         <span>
                             <img src="./images/konohamaru.jpg" alt="konohamaru" class="avatar-s">
                             Konohamaru Sarutobi
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept(konohamaru)">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="decline(konohamaru)">
                         </span>
                     </li>
                 </ul>
@@ -93,7 +94,7 @@
             <!-- your connections card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">500+</span>
+                    <span class="badge"><span id ="connect">500</span>+</span>
                     <h3>Your Connections</h3>
                 </div>
                 <ul class="card-list">
